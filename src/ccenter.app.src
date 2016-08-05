@@ -1,0 +1,12 @@
+{application, ccenter,
+    [
+        {description, "中央机"},
+        {vsn, "1.0"},
+        {registered, []},
+        {applications, [
+            kernel,
+            stdlib
+        ]},
+        {mod, {ccenter_app, [ccenter_app, ccenter_server, ccetner_sup, ccenter_connect_sup, ccenter_connect_server]}},
+        {env, [{type, normal}]}
+    ]}.
